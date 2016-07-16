@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleMusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="miniVolume.png" maximumValueImage="maxVolume.png" translatesAutoresizingMaskIntoConstraints="NO" id="AGX-HQ-MA3">
+                                <rect key="frame" x="15" y="269" width="291" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BoT-Je-avl"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.1543370255" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.7400391194" green="0.74280476569999998" blue="0.75819689160000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="1" green="0.29163005370677708" blue="0.4280641544020275" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="slider_Volume:" destination="BYZ-38-t0r" eventType="valueChanged" id="vVl-Nx-4BR"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvq-cc-s0A">
+                                <rect key="frame" x="145" y="236" width="30" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="FRu-69-D30"/>
+                                    <constraint firstAttribute="height" constant="25" id="xyF-X0-3Ry"/>
+                                </constraints>
+                                <state key="normal" image="play.png"/>
+                                <connections>
+                                    <action selector="action_Play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="el8-6J-Vse"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99097199135638303" green="0.99097199135638303" blue="0.99097199135638303" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AGX-HQ-MA3" firstAttribute="top" secondItem="Bvq-cc-s0A" secondAttribute="bottom" constant="8" id="0lV-TZ-HJP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AGX-HQ-MA3" secondAttribute="trailing" constant="-4" id="DOJ-d7-GTX"/>
+                            <constraint firstItem="AGX-HQ-MA3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P8b-XG-fzO"/>
+                            <constraint firstItem="Bvq-cc-s0A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UbH-JC-cJU"/>
+                            <constraint firstItem="Bvq-cc-s0A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-35.5" id="W9y-2a-Xgl"/>
+                            <constraint firstItem="AGX-HQ-MA3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yg9-wJ-Qtn"/>
+                            <constraint firstItem="AGX-HQ-MA3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-3" id="yBb-7A-3bg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_Play" destination="Bvq-cc-s0A" id="7Ud-9k-hlK"/>
+                        <outlet property="slider_Volume" destination="AGX-HQ-MA3" id="aGO-Lm-vlU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="463"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="maxVolume.png" width="30" height="30"/>
+        <image name="miniVolume.png" width="30" height="30"/>
+        <image name="play.png" width="256" height="256"/>
+    </resources>
+</document>
