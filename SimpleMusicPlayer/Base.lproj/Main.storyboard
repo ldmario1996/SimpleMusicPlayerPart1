@@ -19,42 +19,113 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="miniVolume.png" maximumValueImage="maxVolume.png" translatesAutoresizingMaskIntoConstraints="NO" id="AGX-HQ-MA3">
-                                <rect key="frame" x="15" y="269" width="291" height="31"/>
+                                <rect key="frame" x="15" y="494" width="291" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="BoT-Je-avl"/>
+                                    <constraint firstAttribute="height" constant="30" id="4fG-ng-2BR"/>
                                 </constraints>
-                                <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.1543370255" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="minimumTrackTintColor" red="0.99915849401595747" green="0.29844219923698906" blue="0.21386071273308996" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="maximumTrackTintColor" red="0.7400391194" green="0.74280476569999998" blue="0.75819689160000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="thumbTintColor" red="1" green="0.29163005370677708" blue="0.4280641544020275" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.42232172542765967" green="0.42232172542765967" blue="0.42232172542765967" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="slider_Volume:" destination="BYZ-38-t0r" eventType="valueChanged" id="vVl-Nx-4BR"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvq-cc-s0A">
-                                <rect key="frame" x="145" y="236" width="30" height="25"/>
+                                <rect key="frame" x="145" y="461" width="30" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="FRu-69-D30"/>
-                                    <constraint firstAttribute="height" constant="25" id="xyF-X0-3Ry"/>
+                                    <constraint firstAttribute="width" constant="30" id="DZA-kb-6aL"/>
+                                    <constraint firstAttribute="height" constant="25" id="sO3-ru-gLm"/>
                                 </constraints>
                                 <state key="normal" image="play.png"/>
                                 <connections>
                                     <action selector="action_Play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="el8-6J-Vse"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" onImage="Screen Shot 2016-07-16 at 12.56.31 AM.png" translatesAutoresizingMaskIntoConstraints="NO" id="IIE-kp-3pZ">
+                                <rect key="frame" x="271" y="458" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="649-E1-xG9"/>
+                                    <constraint firstAttribute="height" constant="31" id="Arl-kA-qmI"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="button_replay:" destination="BYZ-38-t0r" eventType="valueChanged" id="T21-yw-RUP"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="idv-EK-R7z">
+                                <rect key="frame" x="51" y="425" width="218" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.20669622126315676" green="0.80018907912234039" blue="0.77697218654244093" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="btn_changemusic:" destination="BYZ-38-t0r" eventType="valueChanged" id="rWN-a4-176"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epx-Iu-5cQ">
+                                <rect key="frame" x="275" y="429" width="45" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dmI-qa-cku"/>
+                                    <constraint firstAttribute="width" constant="45" id="fm9-67-S59"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="katy_perry144.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xea-7p-Z15">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="409"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="409" id="4nb-Wg-8ZU"/>
+                                    <constraint firstAttribute="width" constant="320" id="G5N-Tg-6sN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecU-q4-AS2">
+                                <rect key="frame" x="0.0" y="429" width="49" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="38m-bC-nkp"/>
+                                    <constraint firstAttribute="height" constant="21" id="gXg-hd-jRi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0s-gK-Qcn">
+                                <rect key="frame" x="9" y="461" width="30" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="5L3-bY-BQK"/>
+                                    <constraint firstAttribute="width" constant="30" id="Ilo-pL-gCw"/>
+                                </constraints>
+                                <state key="normal" image="stop2.png"/>
+                                <connections>
+                                    <action selector="btn_stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dXA-me-iNb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99097199135638303" green="0.99097199135638303" blue="0.99097199135638303" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="AGX-HQ-MA3" firstAttribute="top" secondItem="Bvq-cc-s0A" secondAttribute="bottom" constant="8" id="0lV-TZ-HJP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="AGX-HQ-MA3" secondAttribute="trailing" constant="-4" id="DOJ-d7-GTX"/>
-                            <constraint firstItem="AGX-HQ-MA3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P8b-XG-fzO"/>
-                            <constraint firstItem="Bvq-cc-s0A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UbH-JC-cJU"/>
-                            <constraint firstItem="Bvq-cc-s0A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-35.5" id="W9y-2a-Xgl"/>
-                            <constraint firstItem="AGX-HQ-MA3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yg9-wJ-Qtn"/>
-                            <constraint firstItem="AGX-HQ-MA3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-3" id="yBb-7A-3bg"/>
+                            <constraint firstItem="Bvq-cc-s0A" firstAttribute="top" secondItem="idv-EK-R7z" secondAttribute="bottom" constant="6" id="1go-38-S8z"/>
+                            <constraint firstItem="AGX-HQ-MA3" firstAttribute="top" secondItem="u0s-gK-Qcn" secondAttribute="bottom" constant="8" id="2VL-DJ-Pwf"/>
+                            <constraint firstItem="ecU-q4-AS2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="54q-XV-lJe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="epx-Iu-5cQ" secondAttribute="trailing" constant="-20" id="5Ci-iO-Wk0"/>
+                            <constraint firstItem="xea-7p-Z15" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="8oi-wM-h6H"/>
+                            <constraint firstItem="u0s-gK-Qcn" firstAttribute="top" secondItem="ecU-q4-AS2" secondAttribute="bottom" constant="11" id="9Dc-mp-iXb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IIE-kp-3pZ" secondAttribute="trailing" constant="-20" id="CLw-FE-lxn"/>
+                            <constraint firstItem="AGX-HQ-MA3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-3" id="GvE-ea-5qJ"/>
+                            <constraint firstItem="u0s-gK-Qcn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-11" id="Pgi-IM-Qhq"/>
+                            <constraint firstItem="Bvq-cc-s0A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ru6-Jj-WtF"/>
+                            <constraint firstItem="xea-7p-Z15" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="T5N-Al-uyO"/>
+                            <constraint firstItem="idv-EK-R7z" firstAttribute="top" secondItem="xea-7p-Z15" secondAttribute="bottom" constant="16" id="TN5-nc-qLp"/>
+                            <constraint firstItem="AGX-HQ-MA3" firstAttribute="top" secondItem="IIE-kp-3pZ" secondAttribute="bottom" constant="5" id="XbK-7W-3Fj"/>
+                            <constraint firstItem="IIE-kp-3pZ" firstAttribute="top" secondItem="epx-Iu-5cQ" secondAttribute="bottom" constant="8" id="atm-EQ-vZ0"/>
+                            <constraint firstItem="idv-EK-R7z" firstAttribute="leading" secondItem="ecU-q4-AS2" secondAttribute="trailing" constant="4" id="fyR-Ef-sYn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AGX-HQ-MA3" secondAttribute="trailing" constant="-4" id="gv9-mF-fUy"/>
+                            <constraint firstItem="AGX-HQ-MA3" firstAttribute="top" secondItem="Bvq-cc-s0A" secondAttribute="bottom" constant="8" id="iNn-9N-KG3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xea-7p-Z15" secondAttribute="trailing" constant="-20" id="oko-MU-SfR"/>
+                            <constraint firstItem="epx-Iu-5cQ" firstAttribute="leading" secondItem="idv-EK-R7z" secondAttribute="trailing" constant="8" id="vZH-S7-Qhy"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Slider_duration" destination="idv-EK-R7z" id="Sle-jK-5Ro"/>
                         <outlet property="btn_Play" destination="Bvq-cc-s0A" id="7Ud-9k-hlK"/>
+                        <outlet property="lbl_timeLeft" destination="ecU-q4-AS2" id="Ma1-5D-Cl9"/>
+                        <outlet property="lbl_totalTime" destination="epx-Iu-5cQ" id="i1o-rC-i0E"/>
+                        <outlet property="outlet_switch" destination="IIE-kp-3pZ" id="1gc-wS-bBT"/>
                         <outlet property="slider_Volume" destination="AGX-HQ-MA3" id="aGO-Lm-vlU"/>
                     </connections>
                 </viewController>
@@ -64,8 +135,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Screen Shot 2016-07-16 at 12.56.31 AM.png" width="161" height="104"/>
+        <image name="katy_perry144.jpg" width="1280" height="960"/>
         <image name="maxVolume.png" width="30" height="30"/>
         <image name="miniVolume.png" width="30" height="30"/>
         <image name="play.png" width="256" height="256"/>
+        <image name="stop2.png" width="48" height="48"/>
     </resources>
 </document>

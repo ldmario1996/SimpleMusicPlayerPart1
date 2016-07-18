@@ -20,6 +20,11 @@
 		021F94931D39D66E00D43844 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 021F948B1D39D66E00D43844 /* play.png */; };
 		021F94941D39D66E00D43844 /* thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 021F948C1D39D66E00D43844 /* thumb.png */; };
 		021F94951D39D66E00D43844 /* thumbHightLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 021F948D1D39D66E00D43844 /* thumbHightLight.png */; };
+		021F94971D3A23A900D43844 /* katyperry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 021F94961D3A23A900D43844 /* katyperry.mp3 */; };
+		021F94991D3A241800D43844 /* katy_perry144.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 021F94981D3A241800D43844 /* katy_perry144.jpg */; };
+		021F949B1D3A253D00D43844 /* Screen Shot 2016-07-16 at 12.56.31 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 021F949A1D3A253D00D43844 /* Screen Shot 2016-07-16 at 12.56.31 AM.png */; };
+		026CB8211D3C95B800B65824 /* stop1.png in Resources */ = {isa = PBXBuildFile; fileRef = 026CB8201D3C95B800B65824 /* stop1.png */; };
+		026CB8231D3C960800B65824 /* stop2.png in Resources */ = {isa = PBXBuildFile; fileRef = 026CB8221D3C960800B65824 /* stop2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		021F948B1D39D66E00D43844 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		021F948C1D39D66E00D43844 /* thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb.png; sourceTree = "<group>"; };
 		021F948D1D39D66E00D43844 /* thumbHightLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbHightLight.png; sourceTree = "<group>"; };
+		021F94961D3A23A900D43844 /* katyperry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = katyperry.mp3; sourceTree = "<group>"; };
+		021F94981D3A241800D43844 /* katy_perry144.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = katy_perry144.jpg; sourceTree = "<group>"; };
+		021F949A1D3A253D00D43844 /* Screen Shot 2016-07-16 at 12.56.31 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2016-07-16 at 12.56.31 AM.png"; sourceTree = "<group>"; };
+		026CB8201D3C95B800B65824 /* stop1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop1.png; sourceTree = "<group>"; };
+		026CB8221D3C960800B65824 /* stop2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,11 @@
 		021F94851D39D5B200D43844 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				026CB8221D3C960800B65824 /* stop2.png */,
+				026CB8201D3C95B800B65824 /* stop1.png */,
+				021F949A1D3A253D00D43844 /* Screen Shot 2016-07-16 at 12.56.31 AM.png */,
+				021F94981D3A241800D43844 /* katy_perry144.jpg */,
+				021F94961D3A23A900D43844 /* katyperry.mp3 */,
 				021F94861D39D66E00D43844 /* duration.png */,
 				021F94871D39D66E00D43844 /* maxVolume.png */,
 				021F94881D39D66E00D43844 /* miniVolume.png */,
@@ -154,6 +169,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026CB8211D3C95B800B65824 /* stop1.png in Resources */,
+				021F949B1D3A253D00D43844 /* Screen Shot 2016-07-16 at 12.56.31 AM.png in Resources */,
+				021F94971D3A23A900D43844 /* katyperry.mp3 in Resources */,
 				021F94941D39D66E00D43844 /* thumb.png in Resources */,
 				021F947E1D39D3BC00D43844 /* LaunchScreen.storyboard in Resources */,
 				021F948E1D39D66E00D43844 /* duration.png in Resources */,
@@ -161,8 +179,10 @@
 				021F94921D39D66E00D43844 /* pause.png in Resources */,
 				021F94901D39D66E00D43844 /* miniVolume.png in Resources */,
 				021F94951D39D66E00D43844 /* thumbHightLight.png in Resources */,
+				026CB8231D3C960800B65824 /* stop2.png in Resources */,
 				021F948F1D39D66E00D43844 /* maxVolume.png in Resources */,
 				021F947B1D39D3BC00D43844 /* Assets.xcassets in Resources */,
+				021F94991D3A241800D43844 /* katy_perry144.jpg in Resources */,
 				021F94911D39D66E00D43844 /* music.mp3 in Resources */,
 				021F94791D39D3BC00D43844 /* Main.storyboard in Resources */,
 			);
@@ -328,6 +348,7 @@
 				021F94841D39D3BC00D43844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
